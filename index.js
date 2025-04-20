@@ -27,35 +27,43 @@ const posts = [
         likes: 152
     }
 ]
+
 let renderHtml = ''
 
-document.getElementById('post-wrapper').innerHTML =
-    renderHtml =  `
-        <article>
-            <header class="post-header">
-                <div class="user-info">
-                    <img src="${posts[0].avatar}" class="user-info__avatar">
-                    <div class="user-info__wrapper">
-                        <p class="user-info__name">${posts[0].name}</p>
-                        <p class="user-info__location">${posts[0].location}</p>
+function renderPost() {
+    posts.forEach(function(post) {
+        document.getElementById('post-wrapper').innerHTML += `
+            <article>
+                <header class="post-header">
+                    <div class="user-info">
+                        <img src="${post.avatar}" class="user-info__avatar">
+                        <div class="user-info__wrapper">
+                            <p class="user-info__name">${post.name}</p>
+                            <p class="user-info__location">${post.location}</p>
+                        </div>
                     </div>
-                </div>
-            </header>
-            <div>
-                <img src="${posts[0].post}">
-            </div>
-            <footer class="post-footer">
-                <div class="icon-wrapper">
-                    <img class="icon" src="/images/icon-heart.png">
-                    <img class="icon" src="/images/icon-comment.png">
-                    <img class="icon" src="/images/icon-dm.png">
-                </div>
+                </header>
                 <div>
-                    <p class="post-footer__likes">${posts[0].likes} likes</p>
+                    <img src="${post.post}">
                 </div>
-                <div>
-                    <p class="post-footer__comment"><b>${posts[0].username}</b> ${posts[0].comment}</p>
-                </div>
-            </footer>
-        </article>
-    `
+                <footer class="post-footer">
+                    <div class="icon-wrapper">
+                        <img class="icon" src="/images/icon-heart.png">
+                        <img class="icon" src="/images/icon-comment.png">
+                        <img class="icon" src="/images/icon-dm.png">
+                    </div>
+                    <div>
+                        <p class="post-footer__likes">${post.likes} likes</p>
+                    </div>
+                    <div>
+                        <p class="post-footer__comment"><b>${post.username}</b> ${post.comment}</p>
+                    </div>
+                </footer>
+            </article>
+        `
+    })
+
+    // document.getElementById('post-wrapper').innerHTML = renderHtml
+}
+
+renderPost()
