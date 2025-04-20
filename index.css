@@ -73,6 +73,12 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+/* body {
+    background: #EDEDED;
+} */
+
+/* ----- APP HEADER ----- */
+
 .app-header {
     padding: 1em;
     border-block-end: 2px solid #C6C6C6;
@@ -81,6 +87,8 @@ textarea:not([rows]) {
 .logo {
     max-width: 8.125rem;
 }
+
+/* ----- POST HEADER ----- */
 
 .post-header {
     padding: 0.625em;
@@ -112,3 +120,30 @@ textarea:not([rows]) {
     font-size: .75rem;
 }
 
+/* ----- POST FOOTER ----- */
+
+.post-footer {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    padding-block: 1.25em 1em;
+    padding-inline: .625em;
+}
+
+.icon-wrapper {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.icon {
+    max-width: 1.5rem;
+}
+
+.post-footer__likes {
+    font-size: .8125rem;
+    font-weight: 700;
+}
+
+.post-footer__comment {
+    font-size: .8125rem;
+}
