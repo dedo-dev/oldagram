@@ -75,6 +75,7 @@ textarea:not([rows]) {
 
 body {
     background: #EDEDED;
+    font-family: "Source Sans 3", sans-serif;
 }
 
 /* ----- APP HEADER ----- */
@@ -114,7 +115,6 @@ article {
 .user-info__wrapper {
     display: flex;
     flex-direction: column;
-    gap: .25rem
 }
 
 .user-info__name {
