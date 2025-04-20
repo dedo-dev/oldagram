@@ -44,17 +44,17 @@ document.getElementById('post-wrapper').innerHTML =
             <div>
                 <img src="${posts[0].post}">
             </div>
-            <footer>
-                <div>
-                    <img src="/images/icon-heart.png">
-                    <img src="/images/icon-comment.png">
-                    <img src="/images/icon-dm.png">
+            <footer class="post-footer">
+                <div class="icon-wrapper">
+                    <img class="icon" src="/images/icon-heart.png">
+                    <img class="icon" src="/images/icon-comment.png">
+                    <img class="icon" src="/images/icon-dm.png">
                 </div>
                 <div>
-                    <p>${posts[0].likes} likes</p>
+                    <p class="post-footer__likes">${posts[0].likes} likes</p>
                 </div>
                 <div>
-                    <p>${posts[0].username} ${posts.comment}</p>
+                    <p class="post-footer__comment"><b>${posts[0].username}</b> ${posts[0].comment}</p>
                 </div>
             </footer>
         </article>
