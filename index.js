@@ -28,8 +28,6 @@ const posts = [
     }
 ]
 
-let renderHtml = ''
-
 function renderPost() {
     posts.forEach(function(post) {
         document.getElementById('post-wrapper').innerHTML += `
@@ -62,8 +60,6 @@ function renderPost() {
             </article>
         `
     })
-
-    // document.getElementById('post-wrapper').innerHTML = renderHtml
 }
 
 renderPost()
