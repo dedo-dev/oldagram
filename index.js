@@ -32,11 +32,13 @@ let renderHtml = ''
 document.getElementById('post-wrapper').innerHTML =
     renderHtml =  `
         <article>
-            <header>
-                <div>
-                    <img src="${posts[0].avatar}">
-                    <p>${posts[0].name}</p>
-                    <p>${posts[0].location}</p>
+            <header class="post-header">
+                <div class="user-info">
+                    <img src="${posts[0].avatar}" class="user-info__avatar">
+                    <div class="user-info__wrapper">
+                        <p class="user-info__name">${posts[0].name}</p>
+                        <p class="user-info__location">${posts[0].location}</p>
+                    </div>
                 </div>
             </header>
             <div>
