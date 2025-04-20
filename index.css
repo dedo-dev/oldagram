@@ -73,13 +73,14 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-/* body {
+body {
     background: #EDEDED;
-} */
+}
 
 /* ----- APP HEADER ----- */
 
 .app-header {
+    background: #fff;
     padding: 1em;
     border-block-end: 2px solid #C6C6C6;
 }
@@ -88,8 +89,13 @@ textarea:not([rows]) {
     max-width: 8.125rem;
 }
 
-/* ----- POST HEADER ----- */
+/* ----- POST ----- */
 
+article {
+    background: #fff;
+}
+
+/* ----- post header ----- */
 .post-header {
     padding: 0.625em;
 }
@@ -120,7 +126,7 @@ textarea:not([rows]) {
     font-size: .75rem;
 }
 
-/* ----- POST FOOTER ----- */
+/* ----- post footer ----- */
 
 .post-footer {
     display: flex;
