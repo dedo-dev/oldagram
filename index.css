@@ -75,6 +75,7 @@ textarea:not([rows]) {
 
 header {
     padding: 1em;
+    border-block-end: 2px solid #C6C6C6;
 }
 
 .logo {
