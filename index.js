@@ -31,31 +31,27 @@ const posts = [
 function renderPost() {
     posts.forEach(function(post) {
         document.getElementById('post-wrapper').innerHTML += `
-            <article>
-                <header class="post-header">
-                    <div class="user-info">
-                        <img src="${post.avatar}" class="user-info__avatar">
-                        <div class="user-info__wrapper">
-                            <p class="user-info__name">${post.name}</p>
-                            <p class="user-info__location">${post.location}</p>
+            <article class="post">
+                <header class="post__header">
+                    <div class="post__user-info">
+                        <img src="${post.avatar}" class="post__user-info-avatar">
+                        <div class="post__user-info-wrapper">
+                            <p class="post__user-info-name">${post.name}</p>
+                            <p class="post__user-info-location">${post.location}</p>
                         </div>
                     </div>
                 </header>
                 <div>
                     <img src="${post.post}">
                 </div>
-                <footer class="post-footer">
-                    <div class="icon-wrapper">
-                        <img class="icon" src="/images/icon-heart.png">
-                        <img class="icon" src="/images/icon-comment.png">
-                        <img class="icon" src="/images/icon-dm.png">
+                <footer class="post__footer">
+                    <div class="post__footer-icon-wrapper">
+                        <img class="post__footer-icon" src="/images/icon-heart.png">
+                        <img class="post__footer-icon" src="/images/icon-comment.png">
+                        <img class="post__footer-icon" src="/images/icon-dm.png">
                     </div>
-                    <div>
-                        <p class="post-footer__likes">${post.likes} likes</p>
-                    </div>
-                    <div>
-                        <p class="post-footer__comment"><b>${post.username}</b> ${post.comment}</p>
-                    </div>
+                    <p class="post__footer-likes">${post.likes} likes</p>
+                    <p class="post__footer-comment"><b>${post.username}</b> ${post.comment}</p>
                 </footer>
             </article>
         `
