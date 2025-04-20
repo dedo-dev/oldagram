@@ -16,7 +16,7 @@ html {
 /* Remove default margin in favour of better control in authored CSS */
 body, h1, h2, h3, h4, p,
 figure, blockquote, dl, dd {
-  margin-block-end: 0;
+  margin: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -73,12 +73,42 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-header {
+.app-header {
     padding: 1em;
     border-block-end: 2px solid #C6C6C6;
 }
 
 .logo {
     max-width: 8.125rem;
+}
+
+.post-header {
+    padding: 0.625em;
+}
+
+.user-info {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.user-info__avatar {
+    max-width: 2.125rem;
+    clip-path: circle(50%);
+}
+
+.user-info__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem
+}
+
+.user-info__name {
+    font-size: .8125rem;
+    font-weight: 700;
+}
+
+.user-info__location {
+    font-size: .75rem;
 }
 
