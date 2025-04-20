@@ -73,5 +73,11 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+header {
+    padding: 1em;
+}
 
+.logo {
+    max-width: 8.125rem;
+}
 
