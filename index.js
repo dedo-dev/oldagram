@@ -27,3 +27,33 @@ const posts = [
         likes: 152
     }
 ]
+let renderHtml = ''
+
+document.getElementById('post-wrapper').innerHTML =
+    renderHtml =  `
+        <article>
+            <header>
+                <div>
+                    <img src="${posts[0].avatar}">
+                    <p>${posts[0].name}</p>
+                    <p>${posts[0].location}</p>
+                </div>
+            </header>
+            <div>
+                <img src="${posts[0].post}">
+            </div>
+            <footer>
+                <div>
+                    <img src="/images/icon-heart.png">
+                    <img src="/images/icon-comment.png">
+                    <img src="/images/icon-dm.png">
+                </div>
+                <div>
+                    <p>${posts[0].likes} likes</p>
+                </div>
+                <div>
+                    <p>${posts[0].username} ${posts.comment}</p>
+                </div>
+            </footer>
+        </article>
+    `
